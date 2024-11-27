@@ -48,7 +48,11 @@ module.exports = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+				'blush-pink': '#F7CAC9',
+        'sage-green': '#7A8C7E',
+        'cream': '#FFFDD0',
+        'gold': '#D4AF37',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
