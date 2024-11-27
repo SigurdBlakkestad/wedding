@@ -1,9 +1,9 @@
-
+import { Typeform } from '@/components/typeform';
 
 export default function Rsvp() {
   return (
-    <div>
-      <h1>komme du?</h1>
+    <div className='h-full'>
+      <Typeform />
       </div>
   );
 }
