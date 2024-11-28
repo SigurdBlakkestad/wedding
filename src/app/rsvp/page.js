@@ -1,9 +1,9 @@
-import { Typeform } from '@/components/typeform';
+// import { Typeform } from '@/components/typeform';
 
-export default function Rsvp() {
-  return (
+ export default function Rsvp() {
+   return (
     <div className='h-full'>
-      <Typeform />
+
       </div>
-  );
-}
+   );
+ }
