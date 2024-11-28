@@ -17,13 +17,40 @@ export default function WeddingHomePage() {
 
       {/* Hero Section */}
       <section className="relative h-[60vh]">
-        <Image
-          src="/placeholder.svg?height=600&width=1200"
-          alt="Emma and James"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-50"
-        />
+      <div className="absolute inset-0 flex">
+          {/* Left image */}
+          <div className="w-1/4 h-full relative hidden md:block">
+            <Image
+              src="/images/ine-og-even.jpeg"
+              alt="Romantic scene 1"
+              fill
+              style={{objectFit: 'cover'}}
+              className="opacity-70"
+            />
+          </div>
+          {/* Center image */}
+          <div className="flex-grow h-full relative">
+            <Image
+              src="/images/ine-og-even.jpeg"
+              alt="Emma and James embracing in a romantic setting"
+              fill
+              style={{objectFit: 'cover'}}
+              className="opacity-70"
+              priority
+            />
+          </div>
+          {/* Right image */}
+          <div className="w-1/4 h-full relative hidden md:block">
+            <Image
+              src="/images/ine-og-even.jpeg"
+              alt="Romantic scene 2"
+              fill
+              style={{objectFit: 'cover'}}
+              className="opacity-70"
+            />
+          </div>
+        </div>
+
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-gray-800">
             <h2 className="text-5xl font-serif mb-4">Welcome to Our Wedding</h2>
