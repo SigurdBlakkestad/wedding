@@ -13,10 +13,10 @@ export default function Rsvp() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-cream text-gray-800">
+    <div className="min-h-screen text-taupe">
       {/* Header */}
-      <header className="bg-blush-pink py-8 text-center">
-        <h1 className="text-4xl font-serif font-bold text-gray-800 mb-4">RSVP to Celebrate With Us!</h1>
+      <header className="bg-champagne bg-opacity-40 py-8 text-center">
+        <h1 className="text-4xl font-serif font-bold text-taupe mb-4">RSVP to Celebrate With Us!</h1>
         <p className="text-xl max-w-2xl mx-auto px-4">
           Please fill out the form below to let us know if you will be joining our special day.
         </p>
@@ -29,6 +29,7 @@ export default function Rsvp() {
           {isLoaded ? (
             <div className="aspect-w-16 aspect-h-9">
               <iframe
+                title="Wedding RSVP Form"
                 src="https://docs.google.com/forms/d/e/1FAIpQLSc3zK8xetqXC6ZWFJ3sL8Isc7qSv8jzxl3uKV6BKsmKsSXJ3A/viewform?usp=sf_link"
                 width="100%"
                 height="700"
@@ -41,8 +42,8 @@ export default function Rsvp() {
               </iframe>
             </div>
           ) : (
-            <div className="h-[700px] flex items-center justify-center bg-gray-100 rounded-lg shadow-md">
-              <p className="text-lg text-gray-500">Loading RSVP form...</p>
+            <div className="h-[700px] flex items-center justify-center bg-warm-gray/10 rounded-lg shadow-md">
+              <p className="text-lg text-taupe">Loading RSVP form...</p>
             </div>
           )}
         </section>
@@ -53,25 +54,25 @@ export default function Rsvp() {
           <p className="mb-6">
             If you have any questions or need additional information, please don not hesitate to contact us.
           </p>
-          <Button asChild variant="outline">
+          <Button asChild variant="outline" className="border-taupe text-taupe hover:bg-taupe hover:text-white">
             <Link href="/information">View Event Details</Link>
           </Button>
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="bg-sage-green text-white py-8">
+      <footer className="bg-champagne bg-opacity-40 py-8">
         <div className="container mx-auto text-center">
           <nav className="mb-4">
             <ul className="flex justify-center space-x-4">
-              <li><Link href="/" className="hover:underline">Home</Link></li>
-              <li><Link href="/information" className="hover:underline">Information</Link></li>
-              <li><Link href="/wishlist" className="hover:underline">Wishlist</Link></li>
+              <li><Link href="/" className="hover:text-rose-quartz">Home</Link></li>
+              <li><Link href="/information" className="hover:text-rose-quartz">Information</Link></li>
+              <li><Link href="/wishlist" className="hover:text-rose-quartz">Wishlist</Link></li>
             </ul>
           </nav>
           <p>
             For any questions, please contact us at{' '}
-            <a href="mailto:emma.and.james@example.com" className="underline hover:text-gold">
+            <a href="mailto:emma.and.james@example.com" className="underline hover:text-rose-quartz">
               emma.and.james@example.com
             </a>
           </p>

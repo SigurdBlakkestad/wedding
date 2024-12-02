@@ -6,7 +6,7 @@ import { MapPin, Utensils, Hotel, Phone, Mail } from 'lucide-react'
 
 export default function InformationPage() {
   return (
-    <div className="min-h-screen bg-blush-pink bg-opacity-20 text-gray-800">
+    <div className="min-h-screen text-taupe">
 <div
             aria-hidden='true'
             className='pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'>
@@ -22,8 +22,8 @@ export default function InformationPage() {
           </div>
       {/* Header */}
       <header className="py-8 text-center">
-        <h1 className="text-4xl font-serif font-bold text-gray-800 mb-4">Everything You Need to Know</h1>
-        <p className="text-xl">Here are the details to make your experience smooth and memorable!</p>
+        <h1 className="text-4xl font-serif font-bold text-gray-800 mb-4">Alt Du Trenger å Vite</h1>
+        <p className="text-xl">Her er detaljene for å gjøre opplevelsen din smidig og minneverdig!</p>
       </header>
 
       {/* Main Content */}
@@ -31,13 +31,25 @@ export default function InformationPage() {
         {/* Dress Code Section */}
         <Card className="mb-8 ">
           <CardHeader>
-            <CardTitle className="text-2xl font-serif">Dress Code</CardTitle>
+            <CardTitle className="text-2xl font-serif">Antrekk</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="mb-4">The dress code for our wedding is semi-formal. We kindly ask that men wear suits and women wear cocktail dresses or elegant separates.</p>
+            <p className="mb-4">Antrekkskoden for bryllupet vårt er "ranch fancy". Tenk vestlig-inspirert festantrekk - menn kan ha på seg fine jeans med en pen skjorte, boots og cowboyhatt, mens kvinner kan ha på seg kjoler eller skjørt kombinert med boots og vestlig-inspirerte accessoirer.</p>
             <div className="flex justify-center space-x-4">
-              <Image src="/placeholder.svg?height=200&width=150" alt="Men's Attire Example" width={150} height={200} className="rounded-md" />
-              <Image src="/placeholder.svg?height=200&width=150" alt="Women's Attire Example" width={150} height={200} className="rounded-md" />
+              <Image 
+                src="https://i.pinimg.com/550x/61/93/43/6193431a85498b976fffac5a23c7ea07.jpg"
+                alt="Men's Ranch Fancy Attire Example" 
+                width={200} 
+                height={150} 
+                className="rounded-md"
+              />
+              <Image 
+                src="https://tenersboots.com/media/catalog/product/cache/9f6c06bcfa5f0fbf48667da3a0a0cadc/9/0/9030594646402996885-2.jpg" 
+                alt="Women's Ranch Fancy Attire Example" 
+                width={150} 
+                height={200} 
+                className="rounded-md" 
+              />
             </div>
           </CardContent>
         </Card>
@@ -45,12 +57,12 @@ export default function InformationPage() {
         {/* Food Section */}
         <Card className="mb-8 ">
           <CardHeader>
-            <CardTitle className="text-2xl font-serif">Food</CardTitle>
+            <CardTitle className="text-2xl font-serif">Mat</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="mb-4">We will be serving a plated dinner with options for meat, fish, and vegetarian dishes. Please inform us of any dietary restrictions when you RSVP.</p>
+            <p className="mb-4">Vi serverer en treretters middag med valg mellom kjøtt, fisk og vegetar. Vennligst informer oss om eventuelle matallergier eller diettrestriksjoner når du svarer på invitasjonen.</p>
             <Button asChild>
-              <Link href="/rsvp">RSVP and Inform Dietary Restrictions</Link>
+              <Link href="/rsvp">RSVP og informer om matpreferanser</Link>
             </Button>
           </CardContent>
         </Card>
@@ -58,7 +70,7 @@ export default function InformationPage() {
         {/* Accommodation Section */}
         <Card className="mb-8 ">
           <CardHeader>
-            <CardTitle className="text-2xl font-serif">Accommodation</CardTitle>
+            <CardTitle className="text-2xl font-serif">Overnatting</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="space-y-4">
@@ -85,7 +97,7 @@ export default function InformationPage() {
         {/* Toastmaster Contact Info Section */}
         <Card className="mb-8 ">
           <CardHeader>
-            <CardTitle className="text-2xl font-serif">Toastmaster Contact Info</CardTitle>
+            <CardTitle className="text-2xl font-serif">Kontaktinformasjon Toastmaster</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="space-y-4">
@@ -104,26 +116,27 @@ export default function InformationPage() {
         {/* Location Details Section */}
         <Card className="mb-8 ">
           <CardHeader>
-            <CardTitle className="text-2xl font-serif">Location Details</CardTitle>
+            <CardTitle className="text-2xl font-serif">Veibeskrivelse</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex items-start mb-4">
               <MapPin className="mr-2 h-5 w-5 text-gold" />
               <div>
-                <h3 className="font-semibold">Rosewood Gardens</h3>
-                <p>123 Blossom Street, Anytown, ST 12345</p>
+                <h3 className="font-semibold">Harvelandsneset</h3>
+                <p>Brømnesveien 50, 4849 Arendal</p>
               </div>
             </div>
             <div className="aspect-w-16 aspect-h-9">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459391!3d40.74844797932764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1629814729721!5m2!1sen!2sus" 
-                width="600" 
-                height="450" 
-                style={{border:0}} 
-                allowFullScreen={false} 
+                title="Harvelandsneset"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2096.8368!2d8.823170!3d58.543406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4647c4b8b8b8b8b9%3A0x1b8b8b8b8b8b8b8b!2sHarvelandsneset!5e0!3m2!1sen!2sno!4v1620000000000!5m2!1sen!2sno"
+                width="600"
+                height="450"
+                style={{border:0}}
+                allowFullScreen={false}
                 loading="lazy"
                 className="w-full"
-              ></iframe>
+              />
             </div>
           </CardContent>
         </Card>
@@ -131,10 +144,10 @@ export default function InformationPage() {
         {/* Call to Action Buttons */}
         <div className="flex justify-center space-x-4 mb-8">
           <Button asChild>
-            <a href="https://goo.gl/maps/your-venue-link" target="_blank" rel="noopener noreferrer">See the Venue Map</a>
+            <a href="https://www.google.com/maps?q=Brømnesveien+50,+4849+Arendal" target="_blank" rel="noopener noreferrer">Se Veibeskrivelse</a>
           </Button>
           <Button asChild variant="outline">
-            <Link href="#toastmaster-contact">Contact the Toastmasters</Link>
+            <Link href="#toastmaster-contact">Kontakt Toastmaster</Link>
           </Button>
         </div>
       </main>
@@ -144,9 +157,9 @@ export default function InformationPage() {
         <div className="container mx-auto text-center">
           <nav>
             <ul className="flex justify-center space-x-4">
-              <li><Link href="/" className="hover:underline">Home</Link></li>
+              <li><Link href="/" className="hover:underline">Hjem</Link></li>
               <li><Link href="/rsvp" className="hover:underline">RSVP</Link></li>
-              <li><Link href="/gallery" className="hover:underline">Gallery</Link></li>
+              <li><Link href="/gallery" className="hover:underline">Galleri</Link></li>
             </ul>
           </nav>
         </div>

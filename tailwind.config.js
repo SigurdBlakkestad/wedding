@@ -53,6 +53,11 @@ module.exports = {
         'sage-green': '#7A8C7E',
         'cream': '#FFFDD0',
         'gold': '#D4AF37',
+        champagne: '#F7E7CE',
+        taupe: '#483C32',
+        'rose-quartz': '#F7CAC9',
+        ivory: '#FFFFF0',
+        'warm-gray': '#E5E5E5',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
