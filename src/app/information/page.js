@@ -34,7 +34,7 @@ export default function InformationPage() {
             <CardTitle className="text-2xl font-serif">Antrekk</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="mb-4">Antrekkskoden for bryllupet vårt er \"ranch fancy\". Tenk vestlig-inspirert festantrekk - menn kan ha på seg fine jeans med en pen skjorte, boots og cowboyhatt, mens kvinner kan ha på seg kjoler eller skjørt kombinert med boots og vestlig-inspirerte accessoirer.</p>
+            <p className="mb-4">Antrekkskoden for bryllupet vårt er &ldquo;ranch fancy&rdquo;. Tenk vestlig-inspirert festantrekk - menn kan ha på seg fine jeans med en pen skjorte, boots og cowboyhatt, mens kvinner kan ha på seg kjoler eller skjørt kombinert med boots og vestlig-inspirerte accessoirer.</p>
             <div className="flex justify-center space-x-4">
               <Image 
                 src="https://i.pinimg.com/550x/61/93/43/6193431a85498b976fffac5a23c7ea07.jpg"
