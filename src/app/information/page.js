@@ -153,15 +153,21 @@ export default function InformationPage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-sage-green text-white py-8">
+      <footer className="bg-champagne bg-opacity-40 py-8">
         <div className="container mx-auto text-center">
-          <nav>
+          <nav className="mb-4">
             <ul className="flex justify-center space-x-4">
-              <li><Link href="/" className="hover:underline">Hjem</Link></li>
-              <li><Link href="/rsvp" className="hover:underline">RSVP</Link></li>
-              <li><Link href="/gallery" className="hover:underline">Galleri</Link></li>
+              <li><Link href="/" className="hover:text-rose-quartz">Hjem</Link></li>
+              <li><Link href="/rsvp" className="hover:text-rose-quartz">RSVP</Link></li>
+              <li><Link href="/gallery" className="hover:text-rose-quartz">Galleri</Link></li>
             </ul>
           </nav>
+          <p>
+            For any questions, please contact us at{' '}
+            <a href="mailto:emma.and.james@example.com" className="underline hover:text-rose-quartz">
+              emma.and.james@example.com
+            </a>
+          </p>
         </div>
       </footer>
     </div>
