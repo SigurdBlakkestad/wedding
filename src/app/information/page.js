@@ -163,9 +163,9 @@ export default function InformationPage() {
             </ul>
           </nav>
           <p>
-            For any questions, please contact us at{' '}
-            <a href="mailto:emma.and.james@example.com" className="underline hover:text-rose-quartz">
-              emma.and.james@example.com
+          For spørsmål, kontakt oss på{' '}
+            <a href="mailto:even@båt.com" className="underline hover:text-rose-quartz">
+              even@båt.com
             </a>
           </p>
         </div>
