@@ -95,7 +95,7 @@ export default function InformationPage() {
         </Card>
 
         {/* Toastmaster Contact Info Section */}
-        <Card className="mb-8 ">
+        <Card className="mb-8 scroll-mt-32" id="toastmaster-contact">
           <CardHeader>
             <CardTitle className="text-2xl font-serif">Kontaktinformasjon Toastmaster</CardTitle>
           </CardHeader>
@@ -103,11 +103,11 @@ export default function InformationPage() {
             <ul className="space-y-4">
               <li className="flex items-center">
                 <Phone className="mr-2 h-5 w-5 text-gold" />
-                <span>John Smith (Best Man): <a href="tel:+11234567890" className="text-gold hover:underline">+1 (123) 456-7890</a></span>
+                <span>Sigurd Blakkestad: <a href="tel:+4741494482" className="text-gold hover:underline">+47 414 94 482</a> | <a href="mailto:sigurdbla@gmail.com" className="text-gold hover:underline">sigurdbla@gmail.com</a></span>
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 h-5 w-5 text-gold" />
-                <span>Sarah Johnson (Maid of Honor): <a href="mailto:sarah@example.com" className="text-gold hover:underline">sarah@example.com</a></span>
+                <span>Julie Blakkestad: <a href="tel:+4741200360" className="text-gold hover:underline">+47 412 00 360</a> | <a href="mailto:juliem99@live.no" className="text-gold hover:underline">juliem99@live.no</a></span>
               </li>
             </ul>
           </CardContent>
@@ -159,7 +159,7 @@ export default function InformationPage() {
             <ul className="flex justify-center space-x-4">
               <li><Link href="/" className="hover:text-rose-quartz">Hjem</Link></li>
               <li><Link href="/rsvp" className="hover:text-rose-quartz">RSVP</Link></li>
-              <li><Link href="/gallery" className="hover:text-rose-quartz">Galleri</Link></li>
+              <li><Link href="/wishlist" className="hover:text-rose-quartz">Ønskeliste</Link></li>
             </ul>
           </nav>
           <p>
