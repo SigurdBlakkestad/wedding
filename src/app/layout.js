@@ -33,30 +33,30 @@ export default function RootLayout({ children }) {
       >
        <NavigationMenu className="w-full">
         <NavigationMenuList className="flex justify-center items-center">
-        <NavigationMenuItem className="">
+        <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-white/40 hover:bg-white/60 text-gray-800`}>
               Hjem
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem className="">
+        <NavigationMenuItem>
           <Link href="/wishlist" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-white/40 hover:bg-white/60 text-gray-800`}>
               Ønskeliste
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem className="">
+        <NavigationMenuItem>
           <Link href="/rsvp" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Rsvp
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-white/40 hover:bg-white/60 text-gray-800`}>
+              RSVP
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem className="">
+        <NavigationMenuItem>
           <Link href="/information" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-white/40 hover:bg-white/60 text-gray-800`}>
               Informasjon
             </NavigationMenuLink>
           </Link>
