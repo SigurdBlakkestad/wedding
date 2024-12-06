@@ -16,9 +16,9 @@ export default function Rsvp() {
     <div className="min-h-screen text-taupe">
       {/* Header */}
       <header className="bg-champagne bg-opacity-40 py-8 text-center">
-        <h1 className="text-4xl font-serif font-bold text-taupe mb-4">RSVP to Celebrate With Us!</h1>
+        <h1 className="text-4xl font-serif font-bold text-taupe mb-4">RSVP for å feire med oss!</h1>
         <p className="text-xl max-w-2xl mx-auto px-4">
-          Please fill out the form below to let us know if you will be joining our special day.
+          Vennligst fyll ut skjemaet nedenfor for å fortelle oss om du blir med på vår spesielle dag.
         </p>
       </header>
 
@@ -50,12 +50,12 @@ export default function Rsvp() {
 
         {/* Additional Information */}
         <section className="text-center mb-12">
-          <h2 className="text-2xl font-serif mb-4">Need More Information?</h2>
+          <h2 className="text-2xl font-serif mb-4">Trenger du mer informasjon?</h2>
           <p className="mb-6">
-            If you have any questions or need additional information, please don not hesitate to contact us.
+            Hvis du har spørsmål eller trenger mer informasjon, ikke nøl med å kontakte oss.
           </p>
           <Button asChild variant="outline" className="border-taupe text-taupe hover:bg-taupe hover:text-white">
-            <Link href="/information">View Event Details</Link>
+            <Link href="/information">Se arrangementdetaljer</Link>
           </Button>
         </section>
       </main>
@@ -65,13 +65,13 @@ export default function Rsvp() {
         <div className="container mx-auto text-center">
           <nav className="mb-4">
             <ul className="flex justify-center space-x-4">
-              <li><Link href="/" className="hover:text-rose-quartz">Home</Link></li>
-              <li><Link href="/information" className="hover:text-rose-quartz">Information</Link></li>
-              <li><Link href="/wishlist" className="hover:text-rose-quartz">Wishlist</Link></li>
+              <li><Link href="/" className="hover:text-rose-quartz">Hjem</Link></li>
+              <li><Link href="/information" className="hover:text-rose-quartz">Informasjon</Link></li>
+              <li><Link href="/wishlist" className="hover:text-rose-quartz">Ønskeliste</Link></li>
             </ul>
           </nav>
           <p>
-            For any questions, please contact us at{' '}
+            For spørsmål, kontakt oss på{' '}
             <a href="mailto:emma.and.james@example.com" className="underline hover:text-rose-quartz">
               emma.and.james@example.com
             </a>
