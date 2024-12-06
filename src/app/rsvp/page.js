@@ -72,8 +72,8 @@ export default function Rsvp() {
           </nav>
           <p>
             For spørsmål, kontakt oss på{' '}
-            <a href="mailto:emma.and.james@example.com" className="underline hover:text-rose-quartz">
-              emma.and.james@example.com
+            <a href="mailto:even@båt.com" className="underline hover:text-rose-quartz">
+              even@båt.com
             </a>
           </p>
         </div>
