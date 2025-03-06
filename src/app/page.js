@@ -11,7 +11,7 @@ export default function WeddingHomePage() {
       <header className="bg-champagne bg-opacity-40 py-4">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl font-serif font-bold text-gray-800">Ine & Even</h1>
-          <p className="text-xl mt-2">15. Juni 2024</p>
+          <p className="text-xl mt-2">23. August 2024</p>
         </div>
       </header>
 
@@ -71,7 +71,7 @@ export default function WeddingHomePage() {
               <CalendarIcon className="w-8 h-8 text-gold" />
               <div>
                 <h4 className="font-semibold">Tid</h4>
-                <p>24. August 2025</p>
+                <p>23. August 2025</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -88,7 +88,7 @@ export default function WeddingHomePage() {
         {/* Our Story Section */}
         <section id="our-story" className="mb-16">
   <h3 className="text-3xl font-serif text-center mb-8">Vår Historie</h3>
-  <div className="bg-rose-quartz bg-opacity-20 p-8 rounded-lg"> 
+  <div className="bg-rose-quartz bg-opacity-20 p-8 rounded-lg">
     <p className="text-center max-w-2xl mx-auto">
       Det hele startet i Arendal på ungdomsskolen. Even var den populære, kule gutten som alle la merke til, mens Ine var den jordnære og smilende jenta som aldri trodde hun kunne få ham. Men Even hadde fått øye på Ine, og med besluttsomhet la han en treårsplan for å vinne hjertet hennes.
     </p>
@@ -118,7 +118,7 @@ export default function WeddingHomePage() {
       <footer className="bg-champagne bg-opacity-30 text-taupe py-8">
         <div className="container mx-auto text-center">
           <h4 className="text-2xl font-serif mb-4">Nedtelling til den store dagen</h4>
-          <CountdownTimer targetDate={new Date('2025-08-24T00:00:00')} />
+          <CountdownTimer targetDate={new Date('2025-08-23T00:00:00')} />
         </div>
       </footer>
     </div>
