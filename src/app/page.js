@@ -38,7 +38,7 @@ export default function WeddingHomePage() {
       {/* Main Content */}
       <main className="container mx-auto pt-0 pb-3 px-4">
         {/* Our Story Section with Background Image */}
-        <section id="our-story" className="mb-16 relative">
+        <section id="our-story" className="mb-16 relative mt-5">
           
           <div className="relative z-10">
             <h3 className="text-3xl font-serif text-center mb-8">Velkommen til brullypsfest!</h3>
