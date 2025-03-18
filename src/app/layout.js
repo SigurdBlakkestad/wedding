@@ -41,23 +41,23 @@ export default function RootLayout({ children }) {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/wishlist" legacyBehavior passHref>
+          <Link href="/information" legacyBehavior passHref>
             <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-white/40 hover:bg-white/60 text-gray-800`}>
-              Ønskeliste
+              Informasjon
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/program" legacyBehavior passHref>
+            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-white/40 hover:bg-white/60 text-gray-800`}>
+              Program for dagen
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/rsvp" legacyBehavior passHref>
             <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-white/40 hover:bg-white/60 text-gray-800`}>
-              RSVP
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/information" legacyBehavior passHref>
-            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-white/40 hover:bg-white/60 text-gray-800`}>
-              Informasjon
+              S.U
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
