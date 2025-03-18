@@ -29,7 +29,6 @@ export default function Rsvp() {
           {isLoaded ? (
             <div className="aspect-w-16 aspect-h-9">
               <iframe
-                allowTransparency="true"
                 title="Wedding RSVP Form"
                 src="https://docs.google.com/forms/d/e/1FAIpQLSc3zK8xetqXC6ZWFJ3sL8Isc7qSv8jzxl3uKV6BKsmKsSXJ3A/viewform?usp=sf_link"
                 width="100%"

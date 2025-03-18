@@ -61,13 +61,6 @@ export default function RootLayout({ children }) {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/picture_test" legacyBehavior passHref>
-            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-white/40 hover:bg-white/60 text-gray-800`}>
-              Bilde test
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
         {children}
