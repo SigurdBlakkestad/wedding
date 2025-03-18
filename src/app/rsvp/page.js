@@ -30,7 +30,7 @@ export default function Rsvp() {
             <div className="aspect-w-16 aspect-h-9">
               <iframe
                 title="Wedding RSVP Form"
-                src="https://docs.google.com/forms/d/e/1FAIpQLSc3zK8xetqXC6ZWFJ3sL8Isc7qSv8jzxl3uKV6BKsmKsSXJ3A/viewform?usp=sf_link"
+                src="https://docs.google.com/forms/d/e/1FAIpQLScphYQj9jBIM_yJ3TA39mvAKv7LNh82vaINaQsLz-vC3gJKLA/viewform?usp=dialog"
                 width="100%"
                 height="700"
                 frameBorder="0"
