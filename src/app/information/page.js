@@ -7,19 +7,7 @@ import { MapPin, Utensils, Hotel, Phone, Mail } from 'lucide-react'
 export default function InformationPage() {
   return (
     <div className="min-h-screen text-taupe">
-<div
-            aria-hidden='true'
-            className='pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'>
-            <div
-              style={{
-                clipPath:
-                  'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-              }}
-              className='relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 
-                rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] 
-                sm:w-[72.1875rem]'
-            />
-          </div>
+
       {/* Header */}
       <header className="py-8 text-center">
         <h1 className="text-4xl font-serif font-bold text-gray-800 mb-4">Alt Du Trenger å Vite</h1>
@@ -31,69 +19,61 @@ export default function InformationPage() {
         {/* Dress Code Section */}
         <Card className="mb-8 ">
           <CardHeader>
-            <CardTitle className="text-2xl font-serif">Antrekk</CardTitle>
+            <CardTitle className="text-2xl font-serif">Transport/overnatting</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="mb-4">Antrekkskoden for bryllupet vårt er &ldquo;ranch fancy&rdquo;. Tenk vestlig-inspirert festantrekk - menn kan ha på seg fine jeans med en pen skjorte, boots og cowboyhatt, mens kvinner kan ha på seg kjoler eller skjørt kombinert med boots og vestlig-inspirerte accessoirer.</p>
-            <div className="flex justify-center space-x-4">
-              <Image 
-                src="https://i.pinimg.com/550x/61/93/43/6193431a85498b976fffac5a23c7ea07.jpg"
-                alt="Men's Ranch Fancy Attire Example" 
-                width={200} 
-                height={150} 
-                className="rounded-md"
-              />
-              <Image 
-                src="https://tenersboots.com/media/catalog/product/cache/9f6c06bcfa5f0fbf48667da3a0a0cadc/9/0/9030594646402996885-2.jpg" 
-                alt="Women's Ranch Fancy Attire Example" 
-                width={150} 
-                height={200} 
-                className="rounded-md" 
-              />
-            </div>
+            <p className="mb-4">
+            For dere som kommer langveisfra, er det enklest å fly til Kjevik i Kristiansand eller Torp i Sandefjord. Det går busser langs E-18 som stopper utenfor Arendal. For de som trenger, kan vi være behjelpelige med transport herfra.
+            </p>
+            <p className="mb-4">
+            Dersom du har behov for overnatting, er det kort vei til Arendal sentrum med flere hoteller. Vi har også noen sengeplasser ledig på Tromøya. Ved spørsmål, kontakt oss på tlf.; 41622363 (Ine) eller 95469529 (Even)  
+            </p>
+
           </CardContent>
         </Card>
 
         {/* Food Section */}
         <Card className="mb-8 ">
           <CardHeader>
-            <CardTitle className="text-2xl font-serif">Mat</CardTitle>
+            <CardTitle className="text-2xl font-serif">Transport og parkering på selve dagen</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="mb-4">Vi serverer en treretters middag med valg mellom kjøtt, fisk og vegetar. Vennligst informer oss om eventuelle matallergier eller diettrestriksjoner når du svarer på invitasjonen.</p>
-            <Button asChild>
-              <Link href="/rsvp">RSVP og informer om matpreferanser</Link>
-            </Button>
+            <p className="mb-4">
+            Det er dessverre dårlig bussforbindelse, så vi anbefaler å benytte bil. Det er gode parkeringsmuligheter ved kirken og det tar ca. 10 min. i bil til Harvelandsneset, der festen finner sted. Parkering på Harvelandsneset informeres om etter vielsen på selve dagen. Grunnet noe begrenset biloppstillingsplass, ber vi om at man forsøker å samkjøre så langt det lar seg gjøre. 
+            </p>
           </CardContent>
         </Card>
 
         {/* Accommodation Section */}
         <Card className="mb-8 ">
           <CardHeader>
-            <CardTitle className="text-2xl font-serif">Overnatting</CardTitle>
+            <CardTitle className="text-2xl font-serif">Kleskode</CardTitle>
           </CardHeader>
           <CardContent>
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <Hotel className="mr-2 h-5 w-5 text-gold" />
-                <div>
-                  <h3 className="font-semibold">Rosewood Hotel</h3>
-                  <p>123 Main St, Anytown | <a href="tel:+11234567890" className="text-gold hover:underline">+1 (123) 456-7890</a></p>
-                  <a href="https://www.rosewoodhotel.com" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">Visit Website</a>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <Hotel className="mr-2 h-5 w-5 text-gold" />
-                <div>
-                  <h3 className="font-semibold">Blissful Bed & Breakfast</h3>
-                  <p>456 Oak Rd, Anytown | <a href="tel:+10987654321" className="text-gold hover:underline">+1 (098) 765-4321</a></p>
-                  <a href="https://www.blissfulbnb.com" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">Visit Website</a>
-                </div>
-              </li>
-            </ul>
+            <p className="mb-4">
+            Sommerlig og pent/dress. 
+            </p>
+            <p className="mb-4">
+              Kle dere ellers etter vær og vind og ta gjerne med en varm strikkegenser til kvelden.
+            </p>
           </CardContent>
         </Card>
 
+        {/* Wishlist Section */}
+        <Card className="mb-8 ">
+          <CardHeader>
+            <CardTitle className="text-2xl font-serif">Ønskeliste</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="mb-4">
+            Vi har fått litt spørsmål rundt hva vi ønsker oss til bryllupet. Even har lenge ønsket seg penservise og annet dekketøy mens Ine har litt ekstra lyst på noe nytt til verktøysamlingen. Ønsker du å gi en gave, har vi satt sammen en liste med dette og noen andre saker og ting i lenken under. 
+            </p>
+            <a href="https://onskelister.no/liste?id=I5etdToMkaWVqx2fyeNv" className="text-gold hover:underline">Ønskeliste</a>
+
+          </CardContent>
+        </Card>
+
+       
         {/* Toastmaster Contact Info Section */}
         <Card className="mb-8 scroll-mt-32" id="toastmaster-contact">
           <CardHeader>
@@ -151,25 +131,6 @@ export default function InformationPage() {
           </Button>
         </div>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-champagne bg-opacity-40 py-8">
-        <div className="container mx-auto text-center">
-          <nav className="mb-4">
-            <ul className="flex justify-center space-x-4">
-              <li><Link href="/" className="hover:text-rose-quartz">Hjem</Link></li>
-              <li><Link href="/rsvp" className="hover:text-rose-quartz">RSVP</Link></li>
-              <li><Link href="/wishlist" className="hover:text-rose-quartz">Ønskeliste</Link></li>
-            </ul>
-          </nav>
-          <p>
-          For spørsmål, kontakt oss på{' '}
-            <a href="mailto:even@båt.com" className="underline hover:text-rose-quartz">
-              even@båt.com
-            </a>
-          </p>
-        </div>
-      </footer>
     </div>
   )
 }
