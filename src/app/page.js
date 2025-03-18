@@ -8,7 +8,7 @@ export default function WeddingHomePage() {
   return (
     <div className="min-h-screen text-gray-800">
       {/* Enhanced Header */}
-      <header className="py-8 bg-gradient-to-r from-champagne/30 to-rose-quartz/30">
+      <header className="relative z-10 py-8 bg-gradient-to-r from-champagne/70 to-rose-quartz/70">
         <div className="text-center px-4">
           <h1 className="text-5xl font-serif font-light text-gray-800 mb-2">Ine & Even</h1>
           <div className="w-24 h-0.5 bg-gold mx-auto mb-4"/>
@@ -16,17 +16,18 @@ export default function WeddingHomePage() {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="relative h-[60vh] w-full">
-        <div className="absolute inset-0 flex">
-          {/* Center image */}
+      {/* Hero Section with negative margin to create overlap */}
+      <section className="relative h-[45vh] md:h-[60vh] w-full mt-[-70px]">
+        <div className="absolute inset-0 flex items-center justify-center">
+          {/* image */}
           <div className="w-full h-full relative">
             <Image
-              src="/Images/Austre_moland_farge.png"
-              alt="Emma and James embracing in a romantic setting"
+              src="/Images/Austre_moland_farge_crop.png"
+              alt="Her ska de giftast!!"
               fill
-              style={{objectFit: 'cover'}}
-              className="opacity-70"
+              sizes="100vw"
+              style={{objectFit: 'cover', objectPosition: 'center top'}}
+              className="opacity-70" 
               priority
             />
           </div>
@@ -38,15 +39,6 @@ export default function WeddingHomePage() {
       <main className="container mx-auto pt-0 pb-3 px-4">
         {/* Our Story Section with Background Image */}
         <section id="our-story" className="mb-16 relative">
-          {/* <div className="absolute bottom-0 right-0 w-1/2 h-auto z-0 opacity-70">
-            <Image
-              src="/images/Harveland_farge.png"
-              alt="Harveland illustration"
-              width={500}
-              height={400}
-              className="object-contain ml-auto"
-            />
-          </div> */}
           
           <div className="relative z-10">
             <h3 className="text-3xl font-serif text-center mb-8">Velkommen til brullypsfest!</h3>
