@@ -22,7 +22,7 @@ export default function WeddingHomePage() {
           {/* image */}
           <div className="w-full h-full relative">
             <Image
-              src="/Images/Austre_moland_farge_crop.png"
+              src="/images/Austre_moland_farge_crop.png"
               alt="Her ska de giftast!!"
               fill
               sizes="100vw"
