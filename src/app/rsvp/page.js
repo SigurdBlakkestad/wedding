@@ -16,7 +16,7 @@ export default function Rsvp() {
     <div className="min-h-screen text-taupe">
       {/* Header */}
       <header className="bg-champagne bg-opacity-40 py-8 text-center">
-        <h1 className="text-4xl font-serif font-bold text-taupe mb-4">RSVP for å feire med oss!</h1>
+        <h1 className="text-4xl font-bold text-taupe mb-4">RSVP for å feire med oss!</h1>
         <p className="text-xl max-w-2xl mx-auto px-4">
           Vennligst fyll ut skjemaet nedenfor for å fortelle oss om du blir med på vår spesielle dag.
         </p>
@@ -50,7 +50,7 @@ export default function Rsvp() {
 
         {/* Additional Information */}
         <section className="text-center mb-12">
-          <h2 className="text-2xl font-serif mb-4">Trenger du mer informasjon?</h2>
+          <h2 className="text-2xl mb-4">Trenger du mer informasjon?</h2>
           <p className="mb-6">
             Hvis du har spørsmål eller trenger mer informasjon, ikke nøl med å kontakte oss.
           </p>

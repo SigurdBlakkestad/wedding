@@ -6,7 +6,7 @@ export default function ProgramPage() {
       {/* Header */}
       <header className="py-8 bg-gradient-to-r from-champagne/30 to-rose-quartz/30">
         <div className="text-center">
-          <h1 className="text-4xl font-serif font-light text-gray-800 mb-2">Program for dagen</h1>
+          <h1 className="text-4xl font-light text-gray-800 mb-2">Program for dagen</h1>
           <div className="w-24 h-0.5 bg-gold mx-auto"/>
         </div>
       </header>
@@ -47,7 +47,7 @@ export default function ProgramPage() {
           </div>
 
           <div className="p-8 relative z-10">
-            <h2 className="text-3xl font-serif text-center mb-8">Dagens Program</h2>
+            <h2 className="text-3xl text-center mb-8">Dagens Program</h2>
             
             <ul className="space-y-6 text-lg">
               <li className="flex items-center space-x-4">

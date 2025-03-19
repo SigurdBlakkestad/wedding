@@ -2,15 +2,23 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { CalendarIcon, HeartIcon, MapPinIcon } from 'lucide-react'
 import { CountdownTimer } from '@/components/countdown'
+import localFont from 'next/font/local'
 
+// Load the local font file
+// Update the path to match your font file name/location
+const blackMango = localFont({ 
+  src: '/fonts/black-mango-extra-light.ttf', // Path relative to the app directory
+  variable: '--font-black-mango',
+  display: 'swap',
+})
 
 export default function WeddingHomePage() {
   return (
-    <div className="min-h-screen text-gray-800">
+    <div className={`min-h-screen text-gray-800 ${blackMango.variable}`}>
       {/* Enhanced Header */}
       <header className="relative z-10 py-8 bg-gradient-to-r from-champagne/70 to-rose-quartz/70">
         <div className="text-center px-4">
-          <h1 className="text-5xl font-serif font-light text-gray-800 mb-2">Ine & Even</h1>
+          <h1 className="text-5xl font-light text-gray-800 mb-2">Ine & Even</h1>
           <div className="w-24 h-0.5 bg-gold mx-auto mb-4"/>
           <p className="text-xl mt-2 font-light tracking-widest">23. AUGUST 2025</p>
         </div>
@@ -41,7 +49,7 @@ export default function WeddingHomePage() {
         <section id="our-story" className="mb-16 relative mt-5">
           
           <div className="relative z-10">
-            <h3 className="text-3xl font-serif text-center mb-8">Velkommen til brullypsfest!</h3>
+            <h3 className="text-3xl font-black-mango text-center mb-8">Velkommen til brullypsfest!</h3>
             <div className="p-8">
               <p className="text-center max-w-2xl mx-auto">
               Vi gifter oss 23. august 2025 og ønsker å feire dagen sammen med familie og gode venner. 

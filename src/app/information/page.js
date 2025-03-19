@@ -10,7 +10,7 @@ export default function InformationPage() {
 
       {/* Header */}
       <header className="py-8 text-center">
-        <h1 className="text-4xl font-serif font-bold text-gray-800 mb-4">Alt Du Trenger å Vite</h1>
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">Alt Du Trenger å Vite</h1>
         <p className="text-xl">Her er detaljene for å gjøre opplevelsen din smidig og minneverdig!</p>
       </header>
 
@@ -19,7 +19,7 @@ export default function InformationPage() {
         {/* Dress Code Section */}
         <Card className="mb-8 ">
           <CardHeader>
-            <CardTitle className="text-2xl font-serif">Transport/overnatting</CardTitle>
+            <CardTitle className="text-2xl">Transport/overnatting</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="mb-4">
@@ -35,7 +35,7 @@ export default function InformationPage() {
         {/* Food Section */}
         <Card className="mb-8 ">
           <CardHeader>
-            <CardTitle className="text-2xl font-serif">Transport og parkering på selve dagen</CardTitle>
+            <CardTitle className="text-2xl">Transport og parkering på selve dagen</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="mb-4">
@@ -47,7 +47,7 @@ export default function InformationPage() {
         {/* Accommodation Section */}
         <Card className="mb-8 ">
           <CardHeader>
-            <CardTitle className="text-2xl font-serif">Kleskode</CardTitle>
+            <CardTitle className="text-2xl">Kleskode</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="mb-4">
@@ -62,7 +62,7 @@ export default function InformationPage() {
         {/* Wishlist Section */}
         <Card className="mb-8 ">
           <CardHeader>
-            <CardTitle className="text-2xl font-serif">Ønskeliste</CardTitle>
+            <CardTitle className="text-2xl">Ønskeliste</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="mb-4">
@@ -77,7 +77,7 @@ export default function InformationPage() {
         {/* Toastmaster Contact Info Section */}
         <Card className="mb-8 scroll-mt-32" id="toastmaster-contact">
           <CardHeader>
-            <CardTitle className="text-2xl font-serif">Kontaktinformasjon Toastmaster</CardTitle>
+            <CardTitle className="text-2xl">Kontaktinformasjon Toastmaster</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="space-y-4">
@@ -96,7 +96,7 @@ export default function InformationPage() {
         {/* Location Details Section */}
         <Card className="mb-8 ">
           <CardHeader>
-            <CardTitle className="text-2xl font-serif">Veibeskrivelse</CardTitle>
+            <CardTitle className="text-2xl">Veibeskrivelse</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex items-start mb-4">
