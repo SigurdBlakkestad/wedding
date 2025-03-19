@@ -4,17 +4,12 @@ import { CalendarIcon, HeartIcon, MapPinIcon } from 'lucide-react'
 import { CountdownTimer } from '@/components/countdown'
 import localFont from 'next/font/local'
 
-// Load the local font file
-// Update the path to match your font file name/location
-const blackMango = localFont({ 
-  src: '/fonts/black-mango-extra-light.ttf', // Path relative to the app directory
-  variable: '--font-black-mango',
-  display: 'swap',
-})
+
 
 export default function WeddingHomePage() {
   return (
-    <div className={`min-h-screen text-gray-800 ${blackMango.variable}`}>
+    <div className="min-h-screen text-gray-800 " >
+    {/* </div><div className={`min-h-screen text-gray-800 ${blackMangoExtraLight.variable}`}> */}
       {/* Enhanced Header */}
       <header className="relative z-10 py-8 bg-gradient-to-r from-champagne/70 to-rose-quartz/70">
         <div className="text-center px-4">
@@ -49,15 +44,15 @@ export default function WeddingHomePage() {
         <section id="our-story" className="mb-16 relative mt-5">
           
           <div className="relative z-10">
-            <h3 className="text-3xl font-black-mango text-center mb-8">Velkommen til brullypsfest!</h3>
+            <h3 className="text-3xl text-center mb-8">Velkommen til brullypsfest!</h3>
             <div className="p-8">
-              <p className="text-center max-w-2xl mx-auto">
+              <p className="text-center max-w-2xl mx-auto font-black-mango-extra-light">
               Vi gifter oss 23. august 2025 og ønsker å feire dagen sammen med familie og gode venner. 
               </p>
-              <p className="text-center max-w-2xl mx-auto mt-4">
+              <p className="text-center max-w-2xl mx-auto mt-4 font-black-mango-light">
               Vielsen finner sted i Austre Moland kirke kl. 13:00. Etter vielsen blir det feiring utover kvelden i telt på Harvelandsneset med matservering og påfølgende dans. 
               </p>
-              <p className="text-center max-w-2xl mx-auto mt-4">
+              <p className="text-center max-w-2xl mx-auto mt-4 font-black-mango">
               Kveldens toastmastere er Sigurd Blakkestad og Julie Møller. Ønsker du å bidra med tale eller annen underholdning kan Julie nås på tlf; +47 41 20 03 60 og Sigurd på; +47 41 49 44 82. 
               </p>
               <p className="text-center max-w-2xl mx-auto mt-4">

@@ -66,7 +66,9 @@ module.exports = {
   		},
       fontFamily: {
         'black-mango': ['var(--font-black-mango)'],
-        'sans': ['var(--font-black-mango)'],
+				'black-mango-extra-light': ['var(--font-black-mango-extra-light)'],
+				'black-mango-light': ['var(--font-black-mango-light)'],
+        'sans': ['var(--font-black-mango-light)'],
       },
   	}
   },
