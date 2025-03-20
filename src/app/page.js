@@ -46,13 +46,13 @@ export default function WeddingHomePage() {
           <div className="relative z-10">
             <h3 className="text-3xl text-center mb-8">Velkommen til brullypsfest!</h3>
             <div className="p-8">
-              <p className="text-center max-w-2xl mx-auto font-black-mango-extra-light">
+              <p className="text-center max-w-2xl mx-auto">
               Vi gifter oss 23. august 2025 og ønsker å feire dagen sammen med familie og gode venner. 
               </p>
-              <p className="text-center max-w-2xl mx-auto mt-4 font-black-mango-light">
+              <p className="text-center max-w-2xl mx-auto mt-4">
               Vielsen finner sted i Austre Moland kirke kl. 13:00. Etter vielsen blir det feiring utover kvelden i telt på Harvelandsneset med matservering og påfølgende dans. 
               </p>
-              <p className="text-center max-w-2xl mx-auto mt-4 font-black-mango">
+              <p className="text-center max-w-2xl mx-auto mt-4">
               Kveldens toastmastere er Sigurd Blakkestad og Julie Møller. Ønsker du å bidra med tale eller annen underholdning kan Julie nås på tlf; +47 41 20 03 60 og Sigurd på; +47 41 49 44 82. 
               </p>
               <p className="text-center max-w-2xl mx-auto mt-4">
