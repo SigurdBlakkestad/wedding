@@ -1,20 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { CalendarIcon, HeartIcon, MapPinIcon } from 'lucide-react'
-import { CountdownTimer } from '@/components/countdown'
-import localFont from 'next/font/local'
+import { NavigationMenu } from "@/components/ui/navigation-menu"
 
 
 
 export default function WeddingHomePage() {
   return (
-    <div className="min-h-screen text-gray-800 " >
-    {/* </div><div className={`min-h-screen text-gray-800 ${blackMangoExtraLight.variable}`}> */}
-      {/* Enhanced Header */}
-      <header className="relative z-10 py-8 bg-gradient-to-r from-champagne/70 to-rose-quartz/70">
-        <div className="text-center px-4">
+    <div className="min-h-screen text-gray-800 overflow-x-hidden w-full relative">
+      <NavigationMenu floating={true} />
+      <header className="relative z-10 py-8 bg-gradient-to-r from-champagne/30 to-rose-quartz/30 w-full">
+        <div className="text-center">
           <h1 className="text-5xl font-light text-gray-800 mb-2">Ine & Even</h1>
-          <div className="w-24 h-0.5 bg-gold mx-auto mb-4"/>
+          <div className="w-24 h-0.5 bg-gold mx-auto"/>
           <p className="text-xl mt-2 font-light tracking-widest">23. AUGUST 2025</p>
         </div>
       </header>
@@ -39,10 +36,8 @@ export default function WeddingHomePage() {
 
 
       {/* Main Content */}
-      <main className="container mx-auto pt-0 pb-3 px-4">
-        {/* Our Story Section with Background Image */}
+      <main className="w-full max-w-[90rem] mx-auto px-4 overflow-hidden">
         <section id="our-story" className="mb-16 relative mt-5">
-          
           <div className="relative z-10">
             <h3 className="text-3xl text-center mb-8">Velkommen til brullypsfest!</h3>
             <div className="p-8">
@@ -65,10 +60,8 @@ export default function WeddingHomePage() {
           </div>
         </section>
 
-        {/* RSVP Section with Decorative Image */}
         <section id="rsvp" className="text-center relative">
-          {/* Decorative image positioned to overlap between sections */}
-          <div className="absolute left-0 top-0 transform -translate-y-1/2 w-1/3 h-auto z-0 opacity-70">
+          <div className="absolute left-0 top-0 transform -translate-y-1/2 w-1/3 max-w-[300px] h-auto z-0 opacity-70">
             <Image
               src="/images/Blomst3.png" 
               alt="Decorative illustration"
@@ -78,7 +71,6 @@ export default function WeddingHomePage() {
             />
           </div>
           
-          {/* RSVP content with higher z-index to appear above the image */}
           <div className="relative z-10">
             <Link
               href="/rsvp"
