@@ -18,7 +18,7 @@ export default function Rsvp() {
       <NavigationMenu />
       <header className="py-8 bg-gradient-to-r from-champagne/30 to-rose-quartz/30">
         <div className="text-center">
-          <h1 className="text-4xl font-light text-gray-800 mb-2">RSVP for å feire med oss!</h1>
+          <h1 className="text-4xl font-light text-gray-800 mb-2">S.U for å feire med oss!</h1>
           <div className="w-24 h-0.5 bg-gold mx-auto"/>
         </div>
       </header>
