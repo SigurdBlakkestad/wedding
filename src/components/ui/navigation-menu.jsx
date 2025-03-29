@@ -120,7 +120,7 @@ const NavigationMenu = React.forwardRef(({ className, initialFloating = false, .
               className="text-gray-800 hover:text-gray-600 transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              RSVP
+              S.U 
             </Link>
           </div>
         </div>
