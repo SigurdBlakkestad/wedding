@@ -1,12 +1,4 @@
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  navigationMenuTriggerStyle
-} from "@/components/ui/navigation-menu";
 import localFont from "next/font/local";
-import Link from "next/link";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -52,38 +44,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="no" className={`${geistSans.variable} ${geistMono.variable} ${blackMango.variable} ${blackMangoExtraLight.variable} ${blackMangoLight.variable} antialiased min-h-screen`}>
       <body className="font-black-mango-light">
-        <NavigationMenu className="w-full">
-          <NavigationMenuList className="flex justify-center items-center">
-            <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-white/40 hover:bg-white/60 text-gray-800`}>
-                  Hjem
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/information" legacyBehavior passHref>
-                <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-white/40 hover:bg-white/60 text-gray-800`}>
-                  Informasjon
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/program" legacyBehavior passHref>
-                <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-white/40 hover:bg-white/60 text-gray-800`}>
-                  Program for dagen
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/rsvp" legacyBehavior passHref>
-                <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-white/40 hover:bg-white/60 text-gray-800`}>
-                  S.U
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
         {children}
       </body>
     </html>
