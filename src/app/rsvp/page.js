@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
+import { NavigationMenu } from "@/components/ui/navigation-menu"
 
 export default function Rsvp() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -13,18 +14,16 @@ export default function Rsvp() {
   }, [])
 
   return (
-    <div className="min-h-screen text-taupe">
-      {/* Header */}
-      <header className="bg-champagne bg-opacity-40 py-8 text-center">
-        <h1 className="text-4xl font-bold text-taupe mb-4">RSVP for å feire med oss!</h1>
-        <p className="text-xl max-w-2xl mx-auto px-4">
-          Vennligst fyll ut skjemaet nedenfor for å fortelle oss om du blir med på vår spesielle dag.
-        </p>
+    <div className="min-h-screen text-gray-800 overflow-x-hidden">
+      <NavigationMenu />
+      <header className="py-8 bg-gradient-to-r from-champagne/30 to-rose-quartz/30">
+        <div className="text-center">
+          <h1 className="text-4xl font-light text-gray-800 mb-2">RSVP for å feire med oss!</h1>
+          <div className="w-24 h-0.5 bg-gold mx-auto"/>
+        </div>
       </header>
 
-      {/* Main Content */}
       <main className="container mx-auto py-12 px-4">
-        {/* Google Form Embed Section */}
         <section className="mb-12">
           {isLoaded ? (
             <div className="aspect-w-16 aspect-h-9">
@@ -48,7 +47,6 @@ export default function Rsvp() {
           )}
         </section>
 
-        {/* Additional Information */}
         <section className="text-center mb-12">
           <h2 className="text-2xl mb-4">Trenger du mer informasjon?</h2>
           <p className="mb-6">
@@ -59,25 +57,6 @@ export default function Rsvp() {
           </Button>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-champagne bg-opacity-40 py-8">
-        <div className="container mx-auto text-center">
-          <nav className="mb-4">
-            <ul className="flex justify-center space-x-4">
-              <li><Link href="/" className="hover:text-rose-quartz">Hjem</Link></li>
-              <li><Link href="/information" className="hover:text-rose-quartz">Informasjon</Link></li>
-              <li><Link href="/wishlist" className="hover:text-rose-quartz">Ønskeliste</Link></li>
-            </ul>
-          </nav>
-          <p>
-            For spørsmål, kontakt oss på{' '}
-            <a href="mailto:even@båt.com" className="underline hover:text-rose-quartz">
-              even@båt.com
-            </a>
-          </p>
-        </div>
-      </footer>
     </div>
   )
 }
