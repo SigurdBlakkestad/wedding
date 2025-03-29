@@ -1,9 +1,10 @@
 import Image from 'next/image'
+import { NavigationMenu } from "@/components/ui/navigation-menu"
 
 export default function ProgramPage() {
   return (
-    <div className="min-h-screen text-gray-800">
-      {/* Header */}
+    <div className="min-h-screen text-gray-800 overflow-x-hidden">
+      <NavigationMenu />
       <header className="py-8 bg-gradient-to-r from-champagne/30 to-rose-quartz/30">
         <div className="text-center">
           <h1 className="text-4xl font-light text-gray-800 mb-2">Program for dagen</h1>
@@ -11,12 +12,9 @@ export default function ProgramPage() {
         </div>
       </header>
 
-      {/* Main Content */}
-      <main className="relative py-12 px-4">
-        {/* Program content */}
+      <main className="relative py-12 px-4 w-full">
         <div className="max-w-2xl mx-auto relative">
-          {/* Decorative flowers */}
-          <div className="absolute -left-3 -top-10 w-32 h-auto opacity-70">
+          <div className="absolute -left-3 -top-10 w-32 h-auto opacity-70 overflow-hidden">
             <Image
               src="/images/Blomst1.png"
               alt="Decorative flower 1"
@@ -26,7 +24,7 @@ export default function ProgramPage() {
             />
           </div>
           
-          <div className="absolute -right-7 top-1/4 w-28 h-auto opacity-70">
+          <div className="absolute -right-7 top-1/4 w-28 h-auto opacity-70 overflow-hidden">
             <Image
               src="/images/Blomst2.png"
               alt="Decorative flower 2"
@@ -36,7 +34,7 @@ export default function ProgramPage() {
             />
           </div>
           
-          <div className="absolute -left-4 bottom-[117px] w-36 h-auto opacity-70">
+          <div className="absolute -left-4 bottom-[117px] w-36 h-auto opacity-70 overflow-hidden">
             <Image
               src="/images/Blomst3.png"
               alt="Decorative flower 3"
@@ -72,8 +70,7 @@ export default function ProgramPage() {
             </p>
           </div>
 
-          {/* Boat image at the bottom */}
-          <div className="mt-4 flex justify-center">
+          <div className="mt-4 flex justify-center overflow-hidden">
             <Image
               src="/images/Robåt_farge_crop.png"
               alt="Decorative boat illustration"
