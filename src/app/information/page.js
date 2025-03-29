@@ -1,22 +1,21 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { MapPin, Utensils, Hotel, Phone, Mail } from 'lucide-react'
+import { MapPin, Phone, Mail } from 'lucide-react'
+import { NavigationMenu } from "@/components/ui/navigation-menu"
 
 export default function InformationPage() {
   return (
-    <div className="min-h-screen text-taupe">
-
-      {/* Header */}
-      <header className="py-8 text-center">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">Alt Du Trenger å Vite</h1>
-        <p className="text-xl">Her er detaljene for å gjøre opplevelsen din smidig og minneverdig!</p>
+    <div className="min-h-screen text-gray-800 overflow-x-hidden">
+      <NavigationMenu />
+      <header className="py-8 bg-gradient-to-r from-champagne/30 to-rose-quartz/30">
+        <div className="text-center">
+          <h1 className="text-4xl font-light text-gray-800 mb-2">Alt Du Trenger å Vite</h1>
+          <div className="w-24 h-0.5 bg-gold mx-auto"/>
+        </div>
       </header>
 
-      {/* Main Content */}
       <main className="container mx-auto py-12 px-4">
-        {/* Dress Code Section */}
         <Card className="mb-8 ">
           <CardHeader>
             <CardTitle className="text-2xl">Transport/overnatting</CardTitle>
@@ -32,7 +31,6 @@ export default function InformationPage() {
           </CardContent>
         </Card>
 
-        {/* Food Section */}
         <Card className="mb-8 ">
           <CardHeader>
             <CardTitle className="text-2xl">Transport og parkering på selve dagen</CardTitle>
@@ -44,7 +42,6 @@ export default function InformationPage() {
           </CardContent>
         </Card>
 
-        {/* Accommodation Section */}
         <Card className="mb-8 ">
           <CardHeader>
             <CardTitle className="text-2xl">Kleskode</CardTitle>
@@ -59,7 +56,6 @@ export default function InformationPage() {
           </CardContent>
         </Card>
 
-        {/* Wishlist Section */}
         <Card className="mb-8 ">
           <CardHeader>
             <CardTitle className="text-2xl">Ønskeliste</CardTitle>
@@ -69,12 +65,13 @@ export default function InformationPage() {
             Vi har fått litt spørsmål rundt hva vi ønsker oss til bryllupet. Even har lenge ønsket seg penservise og annet dekketøy mens Ine har litt ekstra lyst på noe nytt til verktøysamlingen. Ønsker du å gi en gave, har vi satt sammen en liste med dette og noen andre saker og ting i lenken under. 
             </p>
             <a href="https://onskelister.no/liste?id=I5etdToMkaWVqx2fyeNv" className="text-gold hover:underline">Ønskeliste</a>
+            <br />
+            <a href="https://www.tilbords.no/min-side/onskelister/168285/" className="text-gold hover:underline">Ønskeliste tilbords</a>
 
           </CardContent>
         </Card>
 
        
-        {/* Toastmaster Contact Info Section */}
         <Card className="mb-8 scroll-mt-32" id="toastmaster-contact">
           <CardHeader>
             <CardTitle className="text-2xl">Kontaktinformasjon Toastmaster</CardTitle>
@@ -93,7 +90,6 @@ export default function InformationPage() {
           </CardContent>
         </Card>
 
-        {/* Location Details Section */}
         <Card className="mb-8 ">
           <CardHeader>
             <CardTitle className="text-2xl">Veibeskrivelse</CardTitle>
@@ -121,7 +117,6 @@ export default function InformationPage() {
           </CardContent>
         </Card>
 
-        {/* Call to Action Buttons */}
         <div className="flex justify-center space-x-4 mb-8">
           <Button asChild>
             <a href="https://www.google.com/maps?q=Brømnesveien+50,+4849+Arendal" target="_blank" rel="noopener noreferrer">Se Veibeskrivelse</a>
